@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+*,
+html,
+body{
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --bg-primary: #4343EF;
+  --font:'Montserrat', sans-serif;
+}
+
+.container{
+  display: flex;
+  height: 100vh;
+}
+
+.container .left{
+  width: 50%;
+  position: relative;
+}
+
+.left img{
+  width: 30rem;
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+  z-index: 1;
+}
+
+.left::after{
+  content: '';
+  display: flex;
+  width: 20rem;
+  height: 25rem;
+  background-color: #4343EF;
+  position: absolute;
+  border-bottom-left-radius: 7rem;
+  border-bottom-right-radius: 1rem;
+  left: 5rem;
+}
+
+.left::before{
+  content: '';
+  display: flex;
+  width: 20rem;
+  height: 25rem;
+  background-color: #050587;
+  position: absolute;
+  border-bottom-left-radius: 7rem;
+  border-bottom-right-radius: 1rem;
+  left: 5rem;
+  transform: translateX(-1rem);
+}
+
+.container .right{
+  padding-top: 2rem;
+  width: 50%;
+  display: flex;
+  margin-left: 10rem;
+  font-family: var(--font);
+}
+
+.right form h2{
+  font-size: 1rem;
+  color: #4D4D56;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+form h2 span{
+  color: var(--bg-primary);
+}
+
+form .fullname, .username, .email, .password, .confirm{
+  margin: .8rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+}
+
+.fullname label, .username label, .email label, .password label, .confirm label{
+   font-size: .9rem;
+   margin-bottom: .6rem;
+}
+
+.fullname input, .username input, .email input, .password input, .confirm input{
+  outline: none;
+  border: 1px solid var(--bg-primary);
+  padding: .4rem 1rem;
+  border-radius: 1rem;
+}
+
+form button{
+  border: 2px solid white;
+  background-color: var(--bg-primary);
+  color: white;
+  padding: .5rem;
+  border-radius: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+form .footer{
+  margin-top: 1rem;
+}
+
+.footer p{
+  color: #4D4D56;
+  font-weight: 600;
+  font-size: .9rem;
+  text-align: center;
+}
+
+.footer a{
+  color: var(--bg-primary);
+}
+
+.footer a:hover{
+  color: #050587;
+}
+
+.footer .sosmed{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.sosmed i{
+  font-size: 1.5rem;
+  color: var(--bg-primary);
+}

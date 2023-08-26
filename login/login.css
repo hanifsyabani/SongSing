@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+*,
+html,
+body{
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --bg-primary: #4343EF;
+  --font:'Montserrat', sans-serif;
+}
+
+.container{
+  display: flex;
+  font-family: var(--font);
+}
+
+.container .left{
+  width: 60%;
+  padding-top: 5rem ;
+} 
+
+.left .content{
+  /* text-align: center; */
+  margin: auto;
+  width: 70%;
+  position: relative;
+}
+
+.content .logo{
+  width: 4rem;
+  margin-left: 8rem;
+}
+
+.content h3{
+  color: #4D4D56;
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+.content h3 span{
+  color: var(--bg-primary);
+}
+
+.content form{
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.content .username, .password{
+  display: flex;
+  flex-direction: column;
+}
+
+.username label, .password label{
+  margin: .8rem 0;
+  font-size: .9rem;
+}
+
+.username input, .password input{
+  width: 20rem;
+  /* margin-top: .9rem; */
+  outline: none;
+  border: 1px solid var(--bg-primary);
+  padding: .5rem;
+  border-radius: 1rem;
+}
+
+.content form button{
+  width: 20rem;
+  background-color: #4343EF;
+  border: none;
+  padding: .5rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+
+
+.content p{
+  margin-left: 2rem;
+  color: #4D4D56;
+}
+
+.content .sosmed{
+  display: flex;
+  margin: 1rem 6rem;
+  gap: 1rem;
+}
+
+.sosmed i{
+  font-size: 2rem;
+  color: var(--bg-primary);
+  cursor: pointer;
+}
+
+.container .right{
+  width: 40%;
+  height: 100vh;
+  background-color: #4343EF;
+  
+}
+
+.right img{
+  position: absolute;
+  right: 10%;
+  width: 35rem;
+  animation: float 3s infinite;
+}
+
+@keyframes float{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-1rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
